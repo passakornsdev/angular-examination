@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
-import {ResponseViewChangeRoutingModule} from './response-view-change-routing.module';
+import {UnderstandingCompoentRoutingModule} from './understanding-compoent-routing.module';
 import {ChildViewComponent} from './components/child-view/child-view.component';
 import {AfterViewComponent} from './pages/after-view/after-view.component';
 import {SharedModule} from '../../shared/shared.module';
@@ -14,9 +14,9 @@ import {SharedModule} from '../../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    ResponseViewChangeRoutingModule,
+    UnderstandingCompoentRoutingModule,
     SharedModule
   ]
 })
-export class ResponseViewChangeModule {
+export class UnderstandingComponentModule {
 }

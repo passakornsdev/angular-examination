@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'view-change',
-    loadChildren: () => import('./module/response-view-change/response-view-change.module').then(file => file.ResponseViewChangeModule)
+    path: 'understanding-component',
+    loadChildren: () => import('./module/understanding-component/understanding-component.module')
+      .then(file => file.UnderstandingComponentModule)
   }
 ];
 
@@ -12,4 +13,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
