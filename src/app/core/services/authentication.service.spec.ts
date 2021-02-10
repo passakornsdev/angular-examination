@@ -45,6 +45,10 @@ describe('AuthenticationService', () => {
     expect(oauthCredential.refresh_token).toEqual('def');
   });
 
+  it('get oauth credential should not null', () => {
+    expect(service.getOAuthCredential()).not.toEqual(null);
+  });
+
   afterEach(() => {
     httpTestingController.verify();
   });

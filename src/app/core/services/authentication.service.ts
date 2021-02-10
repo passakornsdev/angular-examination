@@ -45,4 +45,13 @@ export class AuthenticationService {
   saveOAuthCredential(tokenResponseModel: TokenResponseModel): void {
     localStorage.setItem(this.OAUTH_CREDENTIAL_STORAGE_NAME, JSON.stringify(tokenResponseModel));
   }
+
+  getOAuthCredential(): TokenResponseModel | null {
+    let oauthCredential: TokenResponseModel | null = null;
+    const oauthCredentialStr = localStorage.getItem(this.OAUTH_CREDENTIAL_STORAGE_NAME);
+    if (oauthCredentialStr) {
+      oauthCredential = JSON.parse(oauthCredentialStr);
+    }
+    return oauthCredential;
+  }
 }
