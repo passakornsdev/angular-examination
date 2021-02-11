@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+#logo {
+  margin-right: 20px;
+}
+
+#search {
+  width: 30%;
+}
+
+#search input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#menu {
+  margin-left: auto;
+}
+
+#menu ul {
+  list-style-type: none;
+}
+
+#menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+  box-shadow: 0 5px #ccc1;
+}
+
+#menu ul li a {
+  color: #ccc;
+}

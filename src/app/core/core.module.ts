@@ -4,6 +4,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {OauthTokenInterceptor} from './interceptors/oauth-token.interceptor';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
+import {RouterModule} from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { HomeComponent } from './pages/home/home.component';
   declarations: [HeaderComponent, HomeComponent],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent
