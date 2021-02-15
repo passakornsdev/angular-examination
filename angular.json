@@ -7,6 +7,11 @@
   "newProjectRoot": "projects",
   "projects": {
     "testing": {
+      "i18n": {
+        "locales": {
+          "th": "src/locale/messages.th.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -36,6 +41,9 @@
             "scripts": []
           },
           "configurations": {
+            "th": {
+              "localize": ["th"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -73,6 +81,9 @@
           "configurations": {
             "production": {
               "browserTarget": "testing:build:production"
+            },
+            "th": {
+              "browserTarget": "testing:build:th"
             }
           }
         },
