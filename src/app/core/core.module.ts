@@ -5,6 +5,7 @@ import {OauthTokenInterceptor} from './interceptors/oauth-token.interceptor';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import {RouterModule} from '@angular/router';
+import {AnonymousHttpClient} from './services/anonymous-http-client';
 
 
 
@@ -20,7 +21,8 @@ import {RouterModule} from '@angular/router';
   ],
   providers: [
     OauthTokenInterceptor,
-    {provide: HTTP_INTERCEPTORS, useClass: OauthTokenInterceptor, multi: true},
+    AnonymousHttpClient,
+    {provide: HTTP_INTERCEPTORS, useClass: OauthTokenInterceptor, multi: true}
   ]
 })
 export class CoreModule { }
