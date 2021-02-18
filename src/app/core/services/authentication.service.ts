@@ -12,7 +12,7 @@ export class AuthenticationService {
 
   public readonly OAUTH_CREDENTIAL_STORAGE_NAME = 'TESTING_APP_CREDENTIAL';
   private readonly requestTokenHeader: HttpHeaders;
-  private tokenEndpoint = environment.oauthUrl + 'oauth/token';
+  public readonly tokenEndpoint = environment.oauthUrl + 'oauth/token';
 
   constructor(private httpClient: HttpClient) {
     this.requestTokenHeader = new HttpHeaders({
@@ -53,5 +53,9 @@ export class AuthenticationService {
       oauthCredential = JSON.parse(oauthCredentialStr);
     }
     return oauthCredential;
+  }
+
+  logout(): void {
+    localStorage.removeItem(this.OAUTH_CREDENTIAL_STORAGE_NAME);
   }
 }
