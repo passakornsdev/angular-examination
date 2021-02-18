@@ -3,7 +3,7 @@ import {TestBed} from '@angular/core/testing';
 import {AuthenticationService} from './authentication.service';
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 import {TokenResponseModel} from '../models/token-response.model';
-import {environment} from '../../../environments/environment';
+import {AnonymousHttpClient} from './anonymous-http-client';
 
 const login = (service: AuthenticationService, httpTestingController: HttpTestingController) => {
   service.passwordGrant('test', 'password')
@@ -22,6 +22,9 @@ describe('AuthenticationService', () => {
     TestBed.configureTestingModule({
       imports: [
         HttpClientTestingModule
+      ],
+      providers: [
+        AnonymousHttpClient
       ]
     });
     service = TestBed.inject(AuthenticationService);

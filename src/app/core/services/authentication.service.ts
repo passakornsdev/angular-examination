@@ -4,6 +4,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {TokenResponseModel} from '../models/token-response.model';
 import {tap} from 'rxjs/operators';
+import {AnonymousHttpClient} from './anonymous-http-client';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class AuthenticationService {
   private readonly requestTokenHeader: HttpHeaders;
   public readonly tokenEndpoint = environment.oauthUrl + 'oauth/token';
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: AnonymousHttpClient) {
     this.requestTokenHeader = new HttpHeaders({
       authorization: 'Basic ' + btoa('testapp:pass1234'),
       'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
