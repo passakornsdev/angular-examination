@@ -5,7 +5,7 @@ import {HttpClientTestingModule, HttpTestingController} from '@angular/common/ht
 import {TokenResponseModel} from '../models/token-response.model';
 import {AnonymousHttpClient} from './anonymous-http-client';
 
-const login = (service: AuthenticationService, httpTestingController: HttpTestingController) => {
+export const login = (service: AuthenticationService, httpTestingController: HttpTestingController) => {
   service.passwordGrant('test', 'password')
     .subscribe();
   const req = httpTestingController.expectOne(service.tokenEndpoint);
