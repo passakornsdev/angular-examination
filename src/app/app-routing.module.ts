@@ -6,7 +6,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   {
     path: 'understanding-component',
-    loadChildren: () => import('./module/understanding-component/understanding-component.module')
+    loadChildren: () => import('./modules/understanding-component/understanding-component.module')
       .then(file => file.UnderstandingComponentModule)
   },
   { path: '**', pathMatch: 'full', redirectTo: 'home'}
