@@ -4,6 +4,7 @@ import {HomeComponent} from './core/pages/home/home.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
+  { path: 'css', loadChildren: () => import('./modules/learning-css/learning-css.module').then(file => file.LearningCssModule)},
   {
     path: 'understanding-component',
     loadChildren: () => import('./modules/understanding-component/understanding-component.module')
