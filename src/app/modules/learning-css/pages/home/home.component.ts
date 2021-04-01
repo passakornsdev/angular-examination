@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  minutes = 0;
   constructor() { }
 
-  ngOnInit(): void {
-    setInterval(() => {
-      this.minutes++;
-    }, 60000);
+  ngOnInit() {
+
   }
 
 }
