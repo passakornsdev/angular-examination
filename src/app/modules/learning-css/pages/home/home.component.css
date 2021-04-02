@@ -7,6 +7,7 @@
 
 .section-title {
   color: #2ddf5c;
+  text-align: center;
 }
 
 #product-overview h1 {
@@ -83,4 +84,15 @@
 
 .button:focus {
   outline: none;
+}
+
+#key-feature {
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-feature > .section-title {
+  color: white;
+  margin: 32px;
 }
