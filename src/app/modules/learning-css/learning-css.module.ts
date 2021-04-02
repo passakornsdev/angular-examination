@@ -6,13 +6,15 @@ import {HomeComponent} from "./pages/home/home.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {SharedModule} from "../../shared/shared.module";
 import { LearningCssAppComponent } from './components/learning-css-app/learning-css-app.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     HomeComponent,
-    LearningCssAppComponent
+    LearningCssAppComponent,
+    FooterComponent
   ],
   imports: [
     SharedModule,
