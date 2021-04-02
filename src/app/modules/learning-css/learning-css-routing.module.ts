@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import {LearningCssAppComponent} from "./components/learning-css-app/learning-css-app.component";
+import { LearningCssAppComponent } from './components/learning-css-app/learning-css-app.component';
+import { PackagesScreenComponent } from './pages/packages-screen/packages-screen.component';
 
 const routes: Routes = [
-  { path: '', component: LearningCssAppComponent, children: [{ path: 'home', component: HomeComponent }] },
+  {
+    path: '',
+    component: LearningCssAppComponent,
+    children: [
+      { path: 'home', component: HomeComponent },
+      { path: 'packages', component: PackagesScreenComponent },
+    ],
+  },
 ];
 
 @NgModule({
