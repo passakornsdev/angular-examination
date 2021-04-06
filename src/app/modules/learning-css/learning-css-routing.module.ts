@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { LearningCssAppComponent } from './components/learning-css-app/learning-css-app.component';
 import { PackagesScreenComponent } from './pages/packages-screen/packages-screen.component';
+import {PositioningComponent} from "./pages/positioning/positioning.component";
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'packages', component: PackagesScreenComponent },
     ],
   },
+  {path: 'position', component: PositioningComponent}
 ];
 
 @NgModule({
