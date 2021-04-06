@@ -2,6 +2,10 @@
   width: 100%;
   background-color: #2ddf5c;
   padding: 8px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /*select any div inside main-header class*/
