@@ -1,6 +1,19 @@
 #product-overview {
   margin-top: 45px;
-  background: url("/assets/images/freedom.jpg") left 10% bottom 10%/cover no-repeat border-box fixed;
+  background: linear-gradient(to top /*to top = start tranparent at bottom*/
+  , rgba(80, 68, 18, 0.6) ,transparent) /* gradient from opacity to transparent */
+  , url("/assets/images/freedom.jpg") left 10% bottom 10% / cover no-repeat
+      border-box fixed,
+    #ff1b68; /*fallback*/
+  /*background: url("/assets/images/freedom.jpg") left 10% bottom 10%/cover no-repeat border-box fixed;*/
+  /*background-image: linear-gradient(*/
+  /*  124deg,*/
+  /*  indianred,*/
+  /*  cornflowerblue,*/
+  /*  #ffcede,*/
+  /*  rgba(0, 0, 0, 0.3) 70%*/
+  /*);*/
+  /*background-image: radial-gradient(circle, red, black, green);*/
   width: 100%;
   height: 528px;
   padding: 10px;
