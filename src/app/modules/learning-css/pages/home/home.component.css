@@ -1,8 +1,10 @@
 #product-overview {
-  background: url("/assets/images/freedom.jpg");
+  margin-top: 45px;
+  background: url("/assets/images/freedom.jpg") left 10% bottom 10%/cover no-repeat border-box fixed;
   width: 100%;
   height: 528px;
   padding: 10px;
+  position: relative;
 }
 
 .section-title {
