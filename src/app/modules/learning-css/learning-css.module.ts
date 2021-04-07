@@ -9,6 +9,7 @@ import { LearningCssAppComponent } from './components/learning-css-app/learning-
 import { FooterComponent } from './components/footer/footer.component';
 import { PackagesScreenComponent } from './pages/packages-screen/packages-screen.component';
 import { PositioningComponent } from './pages/positioning/positioning.component';
+import { CustomersScreensComponent } from './pages/customers-screens/customers-screens.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PositioningComponent } from './pages/positioning/positioning.component'
     LearningCssAppComponent,
     FooterComponent,
     PackagesScreenComponent,
-    PositioningComponent
+    PositioningComponent,
+    CustomersScreensComponent
   ],
   imports: [
     SharedModule,
