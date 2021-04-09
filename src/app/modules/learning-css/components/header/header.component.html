@@ -1,7 +1,16 @@
+<div class="backdrop" #backDrop (click)="closeMobileNav()"></div>
 <header class="main-header">
   <div>
+    <button class="toggle-button" (click)="showMobileNav()">
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+      <span class="toggle-button__bar"></span>
+    </button>
     <a class="main-header__brand" routerLink="/">
-      <img src="/assets/images/uhost-icon.png" alt="uHost - Your favorite hosting company"/>
+      <img
+        src="/assets/images/uhost-icon.png"
+        alt="uHost - Your favorite hosting company"
+      />
     </a>
   </div>
   <nav class="main-nav">
@@ -12,10 +21,23 @@
       <li class="main-nav__item">
         <a routerLink="/css/customers">Customers</a>
       </li>
-<!--      main-nav__item&#45;&#45;cta = main-nav__item and cta is special state-->
+      <!--      main-nav__item&#45;&#45;cta = main-nav__item and cta is special state-->
       <li class="main-nav__item main-nav__item--cta">
         <a href="start-hosting/index.html">Start Hosting</a>
       </li>
     </ul>
   </nav>
 </header>
+<nav class="mobile-nav" #mobileNav>
+  <ul class="mobile-nav__items">
+    <li class="mobile-nav__item">
+      <a href="packages/index.html">Packages</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a href="customers/index.html">Customers</a>
+    </li>
+    <li class="mobile-nav__item mobile-nav__item--cta">
+      <a href="start-hosting/index.html">Start Hosting</a>
+    </li>
+  </ul>
+</nav>
