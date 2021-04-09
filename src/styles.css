@@ -16,6 +16,10 @@ body {
   /*height: 100%;*/
 }
 
+body::-webkit-scrollbar {
+  width: 0
+}
+
 .backdrop {
   position: fixed;
   display: none;
