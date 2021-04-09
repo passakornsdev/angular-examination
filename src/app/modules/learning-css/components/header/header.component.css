@@ -1,7 +1,7 @@
 .main-header {
   width: 100%;
   background-color: #2ddf5c;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,8 +18,8 @@
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
-  height: 22px;
+  font-size: 1.4rem;
+  height: 1.4rem;
   display: inline-block;
 }
 
@@ -42,7 +42,7 @@
 
 .main-nav__item {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 /*assign class should be a little bit faster*/
@@ -51,7 +51,7 @@
   text-decoration: none;
   color: #0e4f1f;
   font-weight: bold;
-  padding: 3px 0;
+  padding: 0.2rem 0;
 }
 
 /*pseudo element*/
@@ -64,7 +64,7 @@
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
-  border-bottom: 5px solid white;
+  border-bottom: 0.3rem solid white;
 }
 
 /* start cta button*/
@@ -72,8 +72,8 @@
 .main-nav__item--cta a {
   color: white;
   background-color: #ff1b68;
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .main-nav__item--cta a:hover,
