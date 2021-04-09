@@ -3,7 +3,26 @@
   box-sizing: border-box;
 }
 
+/*if we use relative position with height percentages we need to set height to html and body for element that closest to body*/
+
+html {
+  /*height: 100%;*/
+  /*font-size: 75%;*/
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
+  /*height: 100%;*/
+}
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
