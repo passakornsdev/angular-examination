@@ -14,7 +14,7 @@
   /*  rgba(0, 0, 0, 0.3) 70%*/
   /*);*/
   /*background-image: radial-gradient(circle, red, black, green);*/
-  width: 100%;
+  width: 100vw;
   height: 40vh;
   padding: 0.65rem;
   position: relative;
