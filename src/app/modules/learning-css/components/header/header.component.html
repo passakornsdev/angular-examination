@@ -31,13 +31,13 @@
 <nav class="mobile-nav" #mobileNav>
   <ul class="mobile-nav__items">
     <li class="mobile-nav__item">
-      <a routerLink="/css/packages">Packages</a>
+      <a routerLink="/css/packages" (click)="closeMobileNav()">Packages</a>
     </li>
     <li class="mobile-nav__item">
-      <a routerLink="/css/customers">Customers</a>
+      <a routerLink="/css/customers" (click)="closeMobileNav()">Customers</a>
     </li>
     <li class="mobile-nav__item mobile-nav__item--cta">
-      <a href="start-hosting/index.html">Start Hosting</a>
+      <a href="start-hosting/index.html" (click)="closeMobileNav()">Start Hosting</a>
     </li>
   </ul>
 </nav>
