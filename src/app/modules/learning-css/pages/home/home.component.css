@@ -1,5 +1,4 @@
 #product-overview {
-  margin-top: 2.8rem;
   background: linear-gradient(to top /*to top = start tranparent at bottom*/
   , rgba(80, 68, 18, 0.6) ,transparent) /* gradient from opacity to transparent */
   , url("/assets/images/freedom.jpg") center / cover no-repeat
