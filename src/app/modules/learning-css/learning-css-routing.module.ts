@@ -5,6 +5,7 @@ import { LearningCssAppComponent } from './components/learning-css-app/learning-
 import { PackagesScreenComponent } from './pages/packages-screen/packages-screen.component';
 import {PositioningComponent} from "./pages/positioning/positioning.component";
 import {CustomersScreensComponent} from "./pages/customers-screens/customers-screens.component";
+import {FlexComponent} from "./pages/flex/flex.component";
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
       { path: 'customers', component: CustomersScreensComponent },
     ],
   },
-  {path: 'position', component: PositioningComponent}
+  {path: 'position', component: PositioningComponent},
+  {path: 'flex', component: FlexComponent}
 ];
 
 @NgModule({

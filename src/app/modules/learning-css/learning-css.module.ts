@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PackagesScreenComponent } from './pages/packages-screen/packages-screen.component';
 import { PositioningComponent } from './pages/positioning/positioning.component';
 import { CustomersScreensComponent } from './pages/customers-screens/customers-screens.component';
+import { FlexComponent } from './pages/flex/flex.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CustomersScreensComponent } from './pages/customers-screens/customers-s
     FooterComponent,
     PackagesScreenComponent,
     PositioningComponent,
-    CustomersScreensComponent
+    CustomersScreensComponent,
+    FlexComponent
   ],
   imports: [
     SharedModule,
