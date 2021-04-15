@@ -22,7 +22,8 @@
   border: 5px solid black;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+  flex-wrap: nowrap;
   /*flex-flow: row wrap;*/
 
   /*center item along cross axis*/
@@ -51,6 +52,7 @@
   margin: 10px;
   width: 250px;
   font-size: 1.8rem;
+  /*order: -1;*/
 }
 
 .item-3 {
@@ -60,9 +62,11 @@
   border: 5px solid black;
   margin: 10px;
   height: 250px;
+  /*align-self: flex-start;*/
 }
 
 .item-4 {
+  /*order: 1;*/
   background: #f5c096;
   color: white;
   padding: 10px;
@@ -79,6 +83,18 @@
   border: 5px solid black;
   margin: 10px;
   width: 350px;
+
+  /*use available space along contributed elements in line */
+  /*1/3 add to this el*/
+  /*flex-grow: 1;*/
+
+  /*flex-shrink: 1;*/
+
+  /*set size of element in main axis*/
+  /*flex-basis: 300px;*/
+
+  /*flex item prop short hand, 0 for grow, 1 for shrink, auto for basis*/
+  /*flex: 0 1 auto;*/
 }
 
 .item-6 {
@@ -88,4 +104,11 @@
   border: 5px solid black;
   margin: 10px;
   width: 350px;
+
+  /*use available space, higher value takes more space*/
+  /*2/3 add to this el*/
+  /*flex-grow: 2;*/
+
+  /*how much more space to shrink compare to other flex-shrink el*/
+  /*flex-shrink: 4;*/
 }
