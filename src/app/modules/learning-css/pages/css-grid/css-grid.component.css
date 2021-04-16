@@ -125,3 +125,72 @@
 .areas .el4 {
   grid-area: footer;
 }
+
+.position {
+  grid-template-rows:
+    [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 50px)
+    [row-2-end row-3-start] 100px [row-3-end];
+  grid-template-areas: 'header header header header' '. . main main' 'footer footer footer footer';
+  grid-gap: 10px 20px;
+
+  /*justify-items: center;*/
+  /*justify-items: stretch;*/
+
+  /*align-items: center;*/
+  /*align-items: start;*/
+  /*align-items: stretch;*/
+}
+
+.position .el3 {
+  grid-area: header;
+}
+
+.position .el1 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.position .el2 {
+  grid-area: main;
+}
+
+.position .el4 {
+  grid-area: footer;
+}
+
+.position-entire {
+  margin: 10px;
+  display: grid;
+  width: 800px;
+  height: 500px;
+  grid-template-columns: [hd-start] repeat(4, [col-start] 20% [col-end]) [hd-end];
+  grid-template-rows:
+    [hd-start] 5rem [hd-end row-2-start] minmax(10px, 50px)
+    [row-2-end row-3-start] 100px [row-3-end];
+  grid-template-areas: 'header header header header' '. . main main' 'footer footer footer footer';
+
+  /*positioning along x axis*/
+  justify-content: center;
+
+  /*positioning along y axis*/
+  align-content: center;
+}
+
+.position-entire .el1 {
+  grid-column: col-start 2 / col-end 2;
+  /*grid-area: header;*/
+}
+
+.position-entire .el3 {
+  /*use generate name */
+  grid-area: hd;
+  justify-self: center;
+  align-self: center;
+}
+
+.position-entire .el2 {
+  grid-area: main;
+}
+
+.position-entire .el4 {
+  grid-area: footer;
+}
