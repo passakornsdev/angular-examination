@@ -11,6 +11,8 @@ import { PackagesScreenComponent } from './pages/packages-screen/packages-screen
 import { PositioningComponent } from './pages/positioning/positioning.component';
 import { CustomersScreensComponent } from './pages/customers-screens/customers-screens.component';
 import { FlexComponent } from './pages/flex/flex.component';
+import { CssGridComponent } from './pages/css-grid/css-grid.component';
+import { GenerateCssGridComponent } from './pages/generate-css-grid/generate-css-grid.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { FlexComponent } from './pages/flex/flex.component';
     PackagesScreenComponent,
     PositioningComponent,
     CustomersScreensComponent,
-    FlexComponent
+    FlexComponent,
+    CssGridComponent,
+    GenerateCssGridComponent
   ],
   imports: [
     SharedModule,

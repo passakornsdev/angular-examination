@@ -6,6 +6,8 @@ import { PackagesScreenComponent } from './pages/packages-screen/packages-screen
 import {PositioningComponent} from "./pages/positioning/positioning.component";
 import {CustomersScreensComponent} from "./pages/customers-screens/customers-screens.component";
 import {FlexComponent} from "./pages/flex/flex.component";
+import {CssGridComponent} from "./pages/css-grid/css-grid.component";
+import {GenerateCssGridComponent} from "./pages/generate-css-grid/generate-css-grid.component";
 
 const routes: Routes = [
   {
@@ -18,7 +20,9 @@ const routes: Routes = [
     ],
   },
   {path: 'position', component: PositioningComponent},
-  {path: 'flex', component: FlexComponent}
+  {path: 'flex', component: FlexComponent},
+  {path: 'grid', component: CssGridComponent},
+  {path: 'gen-grid', component: GenerateCssGridComponent}
 ];
 
 @NgModule({

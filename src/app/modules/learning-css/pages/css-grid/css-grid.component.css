@@ -1,0 +1,127 @@
+.container {
+  margin: 10px;
+  display: grid;
+
+  /*fr takes available space and divide for all fr*/
+  grid-template-columns: 200px 2fr 20% 1fr;
+
+  grid-template-rows: 2.5rem 1.5rem;
+}
+
+.container2 {
+  height: 100px;
+  grid-template-rows: 2.5rem auto;
+}
+
+.container2 .el3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.container3 .el3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.container4 {
+  height: 30px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: minmax(20px, 100px);
+}
+
+.el1 {
+  background: rgba(255, 154, 72, 0.5);
+}
+
+.el2 {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.el3 {
+  background: rgba(0, 128, 0, 0.5);
+}
+
+.el4 {
+  background: rgba(0, 4, 255, 0.5);
+}
+
+.container5 .el3 {
+  grid-column-start: 3;
+  grid-column-end: span 2;
+}
+
+.container6 .el1 {
+  grid-column-start: 1;
+  /*-1 means last col number*/
+  grid-column-end: -1;
+}
+
+/*force el2 and el3 to overlap*/
+.container7 .el2 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+
+  z-index: 10;
+}
+/*force el2 and el3 to overlap*/
+.container7 .el3 {
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.container8 {
+  grid-template-rows:
+    [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 50px)
+    [row-2-end row-3-start] 100px [row-3-end];
+}
+
+/*short hand and names*/
+.container8 .el2 {
+  /*grid-column-start: 1;*/
+  /*grid-column-end: -1;*/
+  grid-column: 1 / -1;
+  /*grid-row-start: row-2-start;*/
+  /*grid-row-end: span 1;*/
+  grid-row: row-2-start / span 1;
+}
+
+.container8 .el3 {
+  /*grid-column-start: 2;*/
+  /*grid-column-end: span 3;*/
+  /*grid-row-start: row-1-start;*/
+  /*grid-row-end: row-2-end;*/
+
+  /*row start, col start, row end, col end*/
+  grid-area: row-1-start / 2 / row-2-end / span 3;
+}
+
+.gap {
+  /*grid-column-gap: 20px;*/
+  /*grid-row-gap: 10px;*/
+  grid-gap: 10px 20px;
+}
+
+.areas {
+  grid-template-rows:
+    [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 50px)
+    [row-2-end row-3-start] 100px [row-3-end];
+  grid-template-areas: 'header header header header' '. . main main' 'footer footer footer footer';
+}
+
+.areas .el3 {
+  grid-area: header;
+}
+
+.areas .el2 {
+  grid-area: main;
+}
+
+.areas .el4 {
+  grid-area: footer;
+}
