@@ -10,6 +10,7 @@ import {CssGridComponent} from "./pages/css-grid/css-grid.component";
 import {GenerateCssGridComponent} from "./pages/generate-css-grid/generate-css-grid.component";
 import {ResponsiveCssGridComponent} from "./pages/responsive-css-grid/responsive-css-grid.component";
 import {AutoflowCssGridComponent} from "./pages/autoflow-css-grid/autoflow-css-grid.component";
+import {StartHostingComponent} from "./pages/start-hosting/start-hosting.component";
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'packages', component: PackagesScreenComponent },
       { path: 'customers', component: CustomersScreensComponent },
+      { path: 'start-hosting', component: StartHostingComponent },
     ],
   },
   {path: 'position', component: PositioningComponent},
