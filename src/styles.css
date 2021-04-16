@@ -6,14 +6,17 @@
 /*if we use relative position with height percentages we need to set height to html and body for element that closest to body*/
 
 html {
-  /*height: 100%;*/
+  height: 100%;
   /*font-size: 75%;*/
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  /*height: 100%;*/
+  display: grid;
+  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-areas: 'header' 'main' 'footer';
+  height: 100%;
 }
 
 body::-webkit-scrollbar {

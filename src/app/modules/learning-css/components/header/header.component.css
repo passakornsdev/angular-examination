@@ -1,4 +1,5 @@
 .main-header {
+  grid-area: header;
   width: 100%;
   background-color: #2ddf5c;
   padding: 0.5rem 1rem;
