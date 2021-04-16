@@ -13,6 +13,7 @@ import { CustomersScreensComponent } from './pages/customers-screens/customers-s
 import { FlexComponent } from './pages/flex/flex.component';
 import { CssGridComponent } from './pages/css-grid/css-grid.component';
 import { GenerateCssGridComponent } from './pages/generate-css-grid/generate-css-grid.component';
+import { ResponsiveCssGridComponent } from './pages/responsive-css-grid/responsive-css-grid.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { GenerateCssGridComponent } from './pages/generate-css-grid/generate-css
     CustomersScreensComponent,
     FlexComponent,
     CssGridComponent,
-    GenerateCssGridComponent
+    GenerateCssGridComponent,
+    ResponsiveCssGridComponent
   ],
   imports: [
     SharedModule,
