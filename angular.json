@@ -82,21 +82,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "testing:build"
+            "buildTarget": "testing:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "testing:build:production"
+              "buildTarget": "testing:build:production"
             },
             "th": {
-              "browserTarget": "testing:build:th"
+              "buildTarget": "testing:build:th"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "testing:build"
+            "buildTarget": "testing:build"
           }
         },
         "test": {
