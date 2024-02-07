@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  oauthUrl: 'http://localhost:8090/authorization-service/'
+  oauthUrl: 'http://localhost:8090/authorization-service/',
 };

@@ -1,0 +1,6 @@
+# Ignore artifacts:
+.angular
+node_modules
+dist
+e2e
+coverage

@@ -1,4 +1,4 @@
-import { Inject, Injectable, Renderer2 } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Injectable({
@@ -9,7 +9,9 @@ export class ModalServices {
 
   showConfirmModal() {
     // TO DO CHECK ANGULAR SECURITY ABOUT DIRECT DOM ACCESSING AND THE USE OF NATIVE DOM API
-    const backdrop = this.document.body.querySelector('.backdrop') as HTMLDivElement;
+    const backdrop = this.document.body.querySelector(
+      '.backdrop'
+    ) as HTMLDivElement;
     if (backdrop) {
       backdrop.classList.add('backdrop-active');
     }
@@ -20,7 +22,9 @@ export class ModalServices {
   }
 
   dismiss() {
-    const backdrop = this.document.body.querySelector('.backdrop') as HTMLDivElement;
+    const backdrop = this.document.body.querySelector(
+      '.backdrop'
+    ) as HTMLDivElement;
     if (backdrop) {
       backdrop.classList.remove('backdrop-active');
     }

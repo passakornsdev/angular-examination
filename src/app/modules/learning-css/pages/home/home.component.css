@@ -1,8 +1,11 @@
 #product-overview {
-  background: linear-gradient(to top /*to top = start tranparent at bottom*/
-  , rgba(80, 68, 18, 0.6) ,transparent) /* gradient from opacity to transparent */
-  , url("/assets/images/freedom.jpg") center / cover no-repeat
-      border-box fixed,
+  background: linear-gradient(
+        to top /*to top = start tranparent at bottom*/,
+        rgba(80, 68, 18, 0.6),
+        transparent
+      )
+      /* gradient from opacity to transparent */,
+    url('/assets/images/freedom.jpg') center / cover no-repeat border-box fixed,
     #ff1b68; /*fallback*/
   /*background: url("/assets/images/freedom.jpg") left 10% bottom 10%/cover no-repeat border-box fixed;*/
   /*background-image: linear-gradient(*/
@@ -21,7 +24,7 @@
 
 #product-overview h1 {
   color: white;
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   position: absolute;
   bottom: 0;
   font-size: 1.6rem;

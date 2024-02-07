@@ -1,21 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import {ModalServices} from "../../services/modal.service";
+import { ModalServices } from '../../services/modal.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  constructor(private modalServices: ModalServices) {}
 
-  constructor(private modalServices: ModalServices) { }
-
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   showConfirmModal() {
     this.modalServices.showConfirmModal();
   }
-
 }

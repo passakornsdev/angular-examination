@@ -1,5 +1,5 @@
 .background {
-  background: url("/assets/images/plans-background.jpg") center/cover;
+  background: url('/assets/images/plans-background.jpg') center/cover;
   filter: grayscale(40%);
   width: 100vw;
   height: 100vh;

@@ -27,14 +27,14 @@ main {
 }
 
 /* .signup-form input[type="checkbox"] */
-.signup-form input[id*="terms"],
-.signup-form input[id*="terms"] + label {
+.signup-form input[id*='terms'],
+.signup-form input[id*='terms'] + label {
   display: inline-block;
   width: auto;
   vertical-align: bottom;
 }
 
-.signup-form input:not([type="checkbox"]),
+.signup-form input:not([type='checkbox']),
 .signup-form select {
   border: 1px solid #ccc;
   padding: 0.2rem 0.5rem;
@@ -48,7 +48,7 @@ main {
   border-color: #2ddf5c;
 }
 
-.signup-form input[type="checkbox"] {
+.signup-form input[type='checkbox'] {
   border: 1px solid #ccc;
   background: white;
   width: 1rem;
@@ -58,7 +58,7 @@ main {
   appearance: none;
 }
 
-.signup-form input[type="checkbox"]:checked {
+.signup-form input[type='checkbox']:checked {
   background: #2ddf5c;
   border: #0e4f1f;
 }
@@ -70,7 +70,7 @@ main {
   background: #faacac;
 }
 
-.signup-form button[type="submit"] {
+.signup-form button[type='submit'] {
   display: block;
 }
 

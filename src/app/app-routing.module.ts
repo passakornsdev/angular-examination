@@ -6,7 +6,7 @@ const routes: Routes = [
     path: 'css',
     loadChildren: () =>
       import('./modules/learning-css/learning-css.module').then(
-        (file) => file.LearningCssModule
+        file => file.LearningCssModule
       ),
   },
   { path: '**', pathMatch: 'full', redirectTo: 'css/home' },

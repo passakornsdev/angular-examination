@@ -15,7 +15,7 @@
 }
 
 .main-footer__link {
-  margin: 0.5rem 16px
+  margin: 0.5rem 16px;
 }
 
 .main-footer__link a {
@@ -25,7 +25,7 @@
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-  color: #cccccc
+  color: #cccccc;
 }
 
 @media (min-width: 40rem) {
