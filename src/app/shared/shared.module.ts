@@ -6,17 +6,14 @@ import {ConfirmModalComponent} from "./components/confirm-modal/confirm-modal.co
 
 
 @NgModule({
-  declarations: [ConfirmModalComponent],
-  imports: [
-    CommonModule,
-    FormsModule
-  ],
-  exports: [
-    FormsModule,
-    ConfirmModalComponent
-  ],
-  entryComponents: [
-    ConfirmModalComponent
-  ]
+    declarations: [ConfirmModalComponent],
+    imports: [
+        CommonModule,
+        FormsModule
+    ],
+    exports: [
+        FormsModule,
+        ConfirmModalComponent
+    ]
 })
 export class SharedModule { }
